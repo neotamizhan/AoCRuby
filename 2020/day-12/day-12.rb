@@ -1,10 +1,11 @@
+
 def load_test
-  file_path = File.expand_path("../day-01-sample.txt", __FILE__)
+  file_path = File.expand_path("../day-12-sample.txt", __FILE__)
   File.readlines(file_path).map(&:to_i)
 end
 
 def load
-  file_path = File.expand_path("../day-01.txt", __FILE__)
+  file_path = File.expand_path("../day-12.txt", __FILE__)
   File.readlines(file_path).map(&:to_i)
 end
 
