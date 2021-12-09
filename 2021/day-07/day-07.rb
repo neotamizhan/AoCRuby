@@ -9,21 +9,15 @@ end
 
 def calc(pos)
   vals = pos.uniq.sort
-
   cost = Hash.new()
-
   vals.each {|v| cost[v] = pos.map {|p| (p-v).abs}.reduce(:+)}   
-
   cost
 end
 
 def smart_calc(pos)
   vals = (pos.min..pos.max).to_a
-
   cost = Hash.new()
-
   vals.each {|v| cost[v] = pos.map {|p| n = (p-v).abs; (n*(n+1))/2}.reduce(:+)}   
-
   cost
 end
 
