@@ -10,15 +10,11 @@ def load (day: ,is_test: false)
 end
 
 def get_adjacents(map, pos)
-  adjacents = []
-  adjacents << [pos[0]-1,pos[1]-1]
+  adjacents = []  
   adjacents << [pos[0]-1,pos[1]]
-  adjacents << [pos[0]-1,pos[1]+1]
   adjacents << [pos[0],pos[1]-1]
-  adjacents << [pos[0],pos[1]+1]
-  adjacents << [pos[0]+1,pos[1]-1]
-  adjacents << [pos[0]+1,pos[1]]
-  adjacents << [pos[0]+1,pos[1]+1]
+  adjacents << [pos[0],pos[1]+1]  
+  adjacents << [pos[0]+1,pos[1]]  
 
   #puts adjacents.to_s
 
