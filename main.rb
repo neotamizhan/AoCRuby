@@ -1,2 +1,2 @@
-require './2021/day-11/day-11'
+require './2022/day-01/day-01'
 process
