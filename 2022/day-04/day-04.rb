@@ -1,9 +1,8 @@
 def load(is_test = true)
   pairs = []
   file_path = File.expand_path("../data#{is_test ? '-sample' : ''}.txt", __FILE__)
-  File.readlines(file_path).map do |line| 
-    line.strip.split(",")
-  end .each do |a,b|    
+  
+  File.readlines(file_path).map {|line| line.strip.split(",")}.each do |a,b|    
    pairs << [(a.split("-")[0]..a.split("-")[1]).to_a, (b.split("-")[0]..b.split("-")[1]).to_a]    
   end
 
